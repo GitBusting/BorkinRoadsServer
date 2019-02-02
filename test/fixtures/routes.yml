@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating: 1.5
+  date: 2019-02-03 00:28:38
+  estimatedDuration: 1.5
+  nearWater: false
+  nearPark: false
+  favourite: false
+  numberOfTimesUsed: 1
+
+two:
+  title: MyString
+  rating: 1.5
+  date: 2019-02-03 00:28:38
+  estimatedDuration: 1.5
+  nearWater: false
+  nearPark: false
+  favourite: false
+  numberOfTimesUsed: 1

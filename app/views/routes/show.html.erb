@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @route.title %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @route.rating %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @route.date %>
+</p>
+
+<p>
+  <strong>Estimatedduration:</strong>
+  <%= @route.estimatedDuration %>
+</p>
+
+<p>
+  <strong>Nearwater:</strong>
+  <%= @route.nearWater %>
+</p>
+
+<p>
+  <strong>Nearpark:</strong>
+  <%= @route.nearPark %>
+</p>
+
+<p>
+  <strong>Favourite:</strong>
+  <%= @route.favourite %>
+</p>
+
+<p>
+  <strong>Numberoftimesused:</strong>
+  <%= @route.numberOfTimesUsed %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
