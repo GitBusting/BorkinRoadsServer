@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Route Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Maxpace</th>
+      <th>Avgpace</th>
+      <th>Movingpace</th>
+      <th>Maxspeed</th>
+      <th>Avgspeed</th>
+      <th>Movingspeed</th>
+      <th>Routelength</th>
+      <th>Totaltime</th>
+      <th>Movingtime</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @route_details.each do |route_detail| %>
+      <tr>
+        <td><%= route_detail.maxPace %></td>
+        <td><%= route_detail.avgPace %></td>
+        <td><%= route_detail.movingPace %></td>
+        <td><%= route_detail.maxSpeed %></td>
+        <td><%= route_detail.avgSpeed %></td>
+        <td><%= route_detail.movingSpeed %></td>
+        <td><%= route_detail.routeLength %></td>
+        <td><%= route_detail.totalTime %></td>
+        <td><%= route_detail.movingTime %></td>
+        <td><%= route_detail.date %></td>
+        <td><%= link_to 'Show', route_detail %></td>
+        <td><%= link_to 'Edit', edit_route_detail_path(route_detail) %></td>
+        <td><%= link_to 'Destroy', route_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Route Detail', new_route_detail_path %>

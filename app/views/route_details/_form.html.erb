@@ -1,0 +1,67 @@
+<%= form_with(model: route_detail, local: true) do |form| %>
+  <% if route_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(route_detail.errors.count, "error") %> prohibited this route_detail from being saved:</h2>
+
+      <ul>
+      <% route_detail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :maxPace %>
+    <%= form.text_field :maxPace %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avgPace %>
+    <%= form.text_field :avgPace %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movingPace %>
+    <%= form.text_field :movingPace %>
+  </div>
+
+  <div class="field">
+    <%= form.label :maxSpeed %>
+    <%= form.text_field :maxSpeed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avgSpeed %>
+    <%= form.text_field :avgSpeed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movingSpeed %>
+    <%= form.text_field :movingSpeed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :routeLength %>
+    <%= form.text_field :routeLength %>
+  </div>
+
+  <div class="field">
+    <%= form.label :totalTime %>
+    <%= form.text_field :totalTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movingTime %>
+    <%= form.text_field :movingTime %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

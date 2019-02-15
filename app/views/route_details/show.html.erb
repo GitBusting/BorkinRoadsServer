@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Maxpace:</strong>
+  <%= @route_detail.maxPace %>
+</p>
+
+<p>
+  <strong>Avgpace:</strong>
+  <%= @route_detail.avgPace %>
+</p>
+
+<p>
+  <strong>Movingpace:</strong>
+  <%= @route_detail.movingPace %>
+</p>
+
+<p>
+  <strong>Maxspeed:</strong>
+  <%= @route_detail.maxSpeed %>
+</p>
+
+<p>
+  <strong>Avgspeed:</strong>
+  <%= @route_detail.avgSpeed %>
+</p>
+
+<p>
+  <strong>Movingspeed:</strong>
+  <%= @route_detail.movingSpeed %>
+</p>
+
+<p>
+  <strong>Routelength:</strong>
+  <%= @route_detail.routeLength %>
+</p>
+
+<p>
+  <strong>Totaltime:</strong>
+  <%= @route_detail.totalTime %>
+</p>
+
+<p>
+  <strong>Movingtime:</strong>
+  <%= @route_detail.movingTime %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @route_detail.date %>
+</p>
+
+<%= link_to 'Edit', edit_route_detail_path(@route_detail) %> |
+<%= link_to 'Back', route_details_path %>

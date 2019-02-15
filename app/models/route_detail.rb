@@ -1,0 +1,2 @@
+class RouteDetail < ApplicationRecord
+end
