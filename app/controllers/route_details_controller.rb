@@ -70,6 +70,6 @@ class RouteDetailsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def route_detail_params
-      params.require(:route_detail).permit(:maxPace, :avgPace, :movingPace, :maxSpeed, :avgSpeed, :movingSpeed, :routeLength, :totalTime, :movingTime, :date)
+      params.require(:route_detail).permit(:maxPace, :avgPace, :movingPace, :maxSpeed, :avgSpeed, :movingSpeed, :routeLength, :totalTime, :movingTime, :date, :route_id)
     end
 end

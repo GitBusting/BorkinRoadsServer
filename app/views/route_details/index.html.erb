@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Route</th>
       <th>Maxpace</th>
       <th>Avgpace</th>
       <th>Movingpace</th>
@@ -22,6 +23,7 @@
   <tbody>
     <% @route_details.each do |route_detail| %>
       <tr>
+        <td><%= route_detail.route_id %></td>
         <td><%= route_detail.maxPace %></td>
         <td><%= route_detail.avgPace %></td>
         <td><%= route_detail.movingPace %></td>
