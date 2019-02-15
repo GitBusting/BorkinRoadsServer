@@ -20,6 +20,7 @@ class RoutesTest < ApplicationSystemTestCase
     fill_in "Nearpark", with: @route.nearPark
     fill_in "Nearwater", with: @route.nearWater
     fill_in "Numberoftimesused", with: @route.numberOfTimesUsed
+    fill_in "Path", with: @route.path
     fill_in "Rating", with: @route.rating
     fill_in "Title", with: @route.title
     click_on "Create Route"
@@ -38,6 +39,7 @@ class RoutesTest < ApplicationSystemTestCase
     fill_in "Nearpark", with: @route.nearPark
     fill_in "Nearwater", with: @route.nearWater
     fill_in "Numberoftimesused", with: @route.numberOfTimesUsed
+    fill_in "Path", with: @route.path
     fill_in "Rating", with: @route.rating
     fill_in "Title", with: @route.title
     click_on "Update Route"

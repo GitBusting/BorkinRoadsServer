@@ -2,8 +2,9 @@
 
 one:
   title: MyString
+  path: MyString
   rating: 1.5
-  date: 2019-02-03 00:28:38
+  date: 2019-02-15 21:37:33
   estimatedDuration: 1.5
   nearWater: false
   nearPark: false
@@ -12,8 +13,9 @@ one:
 
 two:
   title: MyString
+  path: MyString
   rating: 1.5
-  date: 2019-02-03 00:28:38
+  date: 2019-02-15 21:37:33
   estimatedDuration: 1.5
   nearWater: false
   nearPark: false

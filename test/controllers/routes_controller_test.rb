@@ -17,7 +17,7 @@ class RoutesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create route" do
     assert_difference('Route.count') do
-      post routes_url, params: { route: { date: @route.date, estimatedDuration: @route.estimatedDuration, favourite: @route.favourite, nearPark: @route.nearPark, nearWater: @route.nearWater, numberOfTimesUsed: @route.numberOfTimesUsed, rating: @route.rating, title: @route.title } }
+      post routes_url, params: { route: { date: @route.date, estimatedDuration: @route.estimatedDuration, favourite: @route.favourite, nearPark: @route.nearPark, nearWater: @route.nearWater, numberOfTimesUsed: @route.numberOfTimesUsed, path: @route.path, rating: @route.rating, title: @route.title } }
     end
 
     assert_redirected_to route_url(Route.last)
@@ -34,7 +34,7 @@ class RoutesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update route" do
-    patch route_url(@route), params: { route: { date: @route.date, estimatedDuration: @route.estimatedDuration, favourite: @route.favourite, nearPark: @route.nearPark, nearWater: @route.nearWater, numberOfTimesUsed: @route.numberOfTimesUsed, rating: @route.rating, title: @route.title } }
+    patch route_url(@route), params: { route: { date: @route.date, estimatedDuration: @route.estimatedDuration, favourite: @route.favourite, nearPark: @route.nearPark, nearWater: @route.nearWater, numberOfTimesUsed: @route.numberOfTimesUsed, path: @route.path, rating: @route.rating, title: @route.title } }
     assert_redirected_to route_url(@route)
   end
 
