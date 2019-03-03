@@ -58,6 +58,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'bcrypt', '~> 3.1.7'
   gem 'rack-cors'
+  gem 'jwt'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

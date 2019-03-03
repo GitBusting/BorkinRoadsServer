@@ -1,15 +1,16 @@
 class UsersController < ApplicationController
 	
+    skip_before_action :verify_authenticity_token
 
 	#POST /register
 	def register
-	@user = User.create(user_params)
-	if @user.save
-	response = { message: 'User created successfully'}
-	render json: response, status: :created 
-	else
-	render json: @user.errors, status: :bad
-	end 
+		@user = User.create(user_params)
+		if @user.save
+		response = { message: 'User created successfully'}
+		render json: response, status: :created 
+		else
+		render json: @user.errors, status: :bad
+		end 
 	end
 
 	private
