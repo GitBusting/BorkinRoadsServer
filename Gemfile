@@ -59,6 +59,7 @@ group :test do
   gem 'bcrypt', '~> 3.1.7'
   gem 'rack-cors'
   gem 'jwt'
+  gem 'simple_command'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
