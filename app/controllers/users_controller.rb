@@ -1,5 +1,12 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_request, only: %i[login register]
+
+  # GET /users
+  # GET /users.json
+    def index
+      @users = User.all
+    end
+
    # POST /register
     def register
       @user = User.create(user_params)
