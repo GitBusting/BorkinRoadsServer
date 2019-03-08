@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Public Route Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Petid</th>
+      <th>Route</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @public_route_records.each do |public_route_record| %>
+      <tr>
+        <td><%= public_route_record.userID %></td>
+        <td><%= public_route_record.petID %></td>
+        <td><%= public_route_record.route %></td>
+        <td><%= public_route_record.location %></td>
+        <td><%= link_to 'Show', public_route_record %></td>
+        <td><%= link_to 'Edit', edit_public_route_record_path(public_route_record) %></td>
+        <td><%= link_to 'Destroy', public_route_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Public Route Record', new_public_route_record_path %>

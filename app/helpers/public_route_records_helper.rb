@@ -1,0 +1,2 @@
+module PublicRouteRecordsHelper
+end

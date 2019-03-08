@@ -1,0 +1,2 @@
+class PublicRouteRecord < ApplicationRecord
+end

@@ -1,0 +1,37 @@
+<%= form_with(model: public_route_record, local: true) do |form| %>
+  <% if public_route_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(public_route_record.errors.count, "error") %> prohibited this public_route_record from being saved:</h2>
+
+      <ul>
+      <% public_route_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :userID %>
+    <%= form.number_field :userID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :petID %>
+    <%= form.number_field :petID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :route %>
+    <%= form.text_field :route %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

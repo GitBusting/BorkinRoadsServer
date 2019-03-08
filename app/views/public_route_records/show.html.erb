@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @public_route_record.userID %>
+</p>
+
+<p>
+  <strong>Petid:</strong>
+  <%= @public_route_record.petID %>
+</p>
+
+<p>
+  <strong>Route:</strong>
+  <%= @public_route_record.route %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @public_route_record.location %>
+</p>
+
+<%= link_to 'Edit', edit_public_route_record_path(@public_route_record) %> |
+<%= link_to 'Back', public_route_records_path %>
