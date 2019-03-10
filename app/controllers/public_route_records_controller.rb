@@ -1,5 +1,5 @@
 class PublicRouteRecordsController < ApplicationController
-  skip_before_action :authenticate_request
+  #skip_before_action :authenticate_request
 
   before_action :set_public_route_record, only: [:show, :edit, :update, :destroy]
 
@@ -71,6 +71,6 @@ class PublicRouteRecordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def public_route_record_params
-      params.require(:public_route_record).permit(:userID, :petID, :route, :location)
+      params.require(:public_route_record).permit(:userID, :petID, :route, :location, :isActive, :date)
     end
 end
