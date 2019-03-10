@@ -1,5 +1,5 @@
 class PetsController < ApplicationController
-  #skip_before_action :authenticate_request
+  skip_before_action :authenticate_request
   before_action :set_pet, only: [:show, :edit, :update, :destroy]
 
   # GET /pets

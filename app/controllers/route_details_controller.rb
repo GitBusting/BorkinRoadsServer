@@ -1,5 +1,5 @@
 class RouteDetailsController < ApplicationController
-  #skip_before_action :authenticate_request
+  skip_before_action :authenticate_request
   before_action :set_route_detail, only: [:show, :edit, :update, :destroy]
 
   # GET /route_details

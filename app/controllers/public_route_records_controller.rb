@@ -1,5 +1,5 @@
 class PublicRouteRecordsController < ApplicationController
-  #skip_before_action :authenticate_request
+  skip_before_action :authenticate_request
 
   before_action :set_public_route_record, only: [:show, :edit, :update, :destroy]
 
