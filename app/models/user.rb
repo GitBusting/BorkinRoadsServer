@@ -5,4 +5,8 @@ class User < ApplicationRecord
  
     #encrypt password
     has_secure_password
+
+    #db relations
+    has_many :pets
+    has_many :routes
 end

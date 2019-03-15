@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_10_194038) do
+ActiveRecord::Schema.define(version: 2019_03_15_211210) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2019_03_10_194038) do
     t.string "lastVetDate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_pets_on_user_id"
   end
 
   create_table "public_route_records", force: :cascade do |t|
@@ -81,6 +83,8 @@ ActiveRecord::Schema.define(version: 2019_03_10_194038) do
     t.integer "numberOfTimesUsed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_routes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
