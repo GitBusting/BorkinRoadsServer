@@ -28,7 +28,8 @@ class UsersController < ApplicationController
   # PATCH/PUT /routes/1.json
   def update
     @user = User.find(params[:id])
-    @user.update(friend_ids, params[:friend_ids])
+    @user.friend_ids = params[:friend_ids]
+    @user.save
   end
 
     def login
