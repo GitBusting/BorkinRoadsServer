@@ -24,6 +24,13 @@ class UsersController < ApplicationController
      end 
     end
 
+  # PATCH/PUT /routes/1
+  # PATCH/PUT /routes/1.json
+  def update
+    @user = User.find(params[:id])
+    @user.update(friend_ids, params[:friend_ids])
+  end
+
     def login
       authenticate params[:email], params[:password]
     end
@@ -43,7 +50,8 @@ class UsersController < ApplicationController
       params.permit(
         :name,
         :email,
-        :password
+        :password,
+        :friend_ids
       )
     end
 
