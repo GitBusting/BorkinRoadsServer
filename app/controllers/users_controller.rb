@@ -32,6 +32,13 @@ class UsersController < ApplicationController
     @user.save
   end
 
+  # DELETE /users/1
+  # DELETE /users/1.json
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+  end
+
     def login
       authenticate params[:email], params[:password]
     end
